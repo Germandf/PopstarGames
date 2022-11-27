@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bodyRegistro" id="paginaRegistro">
+    <!-- Navigation -->
+    <div class="navigation">
+        <div class="espacioLogoNav"> 
+            <img class="logoNav" src="images/popstarlogo.png" alt="logo">
+        </div>
+        <div class="seccionesNav">
+            <ul class="itemsNav">
+                <li><a href="juegos.html" class="linkNav">Juegos</a></li>
+                <li><a href="ingreso.html" class="linkNav">Cuenta</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Cuadro para registrarse -->
+    <div class="cuadroRegistro">
+        <p class="tituloRegistro">Registrarse</p>
+        <form>
+            <div class="divNombreRegistro">
+                <input class="inputNombreRegistro" type="text" id="nombreRegistro" placeholder="Nombre">
+                <input class="inputNombreRegistro" type="text" id="apellidoRegistro" placeholder="Apellido">
+            </div>
+            <div>
+                <input class="inputDecoradoRegistro" type="email" id="emailRegistro" placeholder="Email">
+            </div>
+            <div>
+                <input class="inputDecoradoRegistro" type="password" id="passwordRegistro" placeholder="Contraseña">
+            </div>
+            <div>
+                <input class="inputDecoradoRegistro" type="password" id="password2Registro" placeholder="Repetir Contraseña">
+            </div>
+            <div>
+                <input class="inputDateRegistro" type="date" id="">
+            </div>
+            <div class="divRadioRegistro">
+                <label class="textRadioRegistro"><input type="radio" name="sexo">Hombre</label>
+                <label class="textRadioRegistro"><input type="radio" name="sexo">Mujer</label>
+                <label class="textRadioRegistro"><input type="radio" name="sexo">Otro</label>
+            </div>
+            <!-- Captcha -->
+            <div class="captcha">
+                <div class="areaNumeroCaptcha">
+                    <input class="numeroRandomCaptcha" type="text" readonly>
+                </div>
+                <div class="contenidoCaptcha">
+                    <div class="areaInputCaptcha">
+                        <p class="textoCaptcha">Escriba aqui:</p>
+                        <input class="escribirCaptcha" type="text">
+                    </div>
+                    <div class="areaButtonsCaptcha">
+                        <div class="buttonsCaptcha">
+                            <button type="button" id="recargarCaptchaButton" class="captchaButton">Recargar</button>
+                            <button type="button" id="enviarCaptchaButton" class="captchaButton">Enviar</button>
+                        </div>
+                        <p class="validadoCaptcha">No validado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formBottomRegistro">
+                <button type="button" class="registrarButton">Registrarse</button>
+            </div>
+        </form>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerContent">
+            <p class="footerCopyright">© 2020 Popstar Games</p>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="js/js.js"></script>
+</body>
+</html>

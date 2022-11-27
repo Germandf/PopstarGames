@@ -1,0 +1,462 @@
+/* Generales */
+
+@font-face{
+    font-family: "customFont";
+    src: url("../fonts/customFont.woff2");
+}
+
+.bodyIndex, .bodyJuegos, .bodyIngreso, .bodyRegistro, .bodyRegistroCompletado, .bodyRecuperar{
+    margin: 0;
+    background-image: url(../images/bg-repeatp.png);
+}
+
+/* Navigation */
+
+.navigation{
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid orange;
+}
+
+.espacioLogoNav{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoNav{
+    height: 40px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.logoNav:hover{
+    cursor: pointer;
+}
+
+.seccionesNav{
+    width: 20%;
+}
+
+.itemsNav{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linkNav{
+    color: white;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+.linkNav:hover{
+    color: white;
+    opacity: 1;
+}
+
+/* Footer */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.footerCopyright{
+    margin: 0;
+    font-size: 14px;
+}
+
+/* CSS index.html */
+                    /* Parametros generales */
+.pIndex{
+    color: white;
+    font-family: "customFont";
+}
+
+.h1Index{
+    color: white;
+    margin: 0;
+}
+                    /* Contenido */
+.homeContent{
+    width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    padding-bottom: 50px;
+}
+
+.imagenIndex{
+    width: 100%;
+}
+
+/* CSS juegos.html */
+                    /* Parametros generales */
+.pJuegos{
+    color: white;
+    font-family: "customFont";
+}
+
+li{
+    color: white;
+}
+                    /* Contenido */
+.tituloCatalogo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "customFont";
+}
+
+.juegosContent{
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 0px;
+    padding: 0 10px;
+    padding-bottom: 50px;
+}
+                    /* Juegos */
+
+.divJuegos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imagenJuegosIzq{
+    height:375px;
+    width:50%;
+    margin-right: 5px;
+}
+
+.imagenJuegosDer{
+    height:375px;
+    width:50%;
+    margin-left: 5px;
+}
+
+.tablaJuegosIzq{
+    color: white;
+    border-collapse: collapse;
+    height: 375px;
+    margin: 0 5px 0 0;
+    text-align: center;
+}
+
+.tablaJuegosDer{
+    color: white;
+    border-collapse: collapse;
+    height: 375px;
+    margin: 0 0 0 5px;
+    text-align: center;
+}
+
+thead{
+    background-color: orange;
+    line-height: 40px;
+    color: black;
+}
+
+td{
+    border: solid 1px white;
+}
+
+/* CSS ingreso.html */
+                    /* Contenido */
+
+.cuadroIngreso{
+    width: 345px;
+    margin: auto;
+    margin-top: 14%;
+    margin-bottom: 14%;
+    background-color: white;
+    padding: 2.5%;
+}
+
+.tituloIngreso{
+    font-size: 24px;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima";
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.formBottomIngreso{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingresarButton{
+    background-color: #f7931e;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 35px;
+    border: none;
+}
+
+.ingresarButton:hover{
+    background-color: #c26903;
+    cursor: pointer;
+}
+
+.inputDecoradoIngreso{
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.inputDecoradoIngreso:focus{
+    outline: none;
+}
+
+/* CSS registro.html */
+                    /* Contenido */
+
+.cuadroRegistro{
+    width: 345px;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background-color: white;
+    padding: 2.5%;
+}
+
+.tituloRegistro{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima";
+}
+
+.divNombreRegistro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputNombreRegistro{
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 46%;
+    margin-bottom: 15px;
+}
+
+.inputNombreRegistro{
+    outline: none;
+}
+
+.inputDecoradoRegistro{
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.inputDecoradoRegistro:focus{
+    outline: none;
+}
+
+.inputDateRegistro{
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+.divRadioRegistro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textRadioRegistro{
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima";
+    font-size: 14px;
+
+}
+
+.formBottomRegistro{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.registrarButton{
+    background-color: #f7931e;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 35px;
+    border: none;
+    margin-top: 10px;
+}
+
+.registrarButton:hover{
+    background-color: #c26903;
+    cursor: pointer;
+}
+
+                    /* Captcha */
+
+.captcha{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.areaNumeroCaptcha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+.numeroRandomCaptcha{
+    width: 95%;
+    height: 70%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contenidoCaptcha{
+    display: flex;
+    height: 60%;
+}
+
+.areaInputCaptcha{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoCaptcha{
+    margin: 0;
+    margin-top: -15px;
+}
+
+.escribirCaptcha{
+    width: 80%;
+    height: 40%;
+    text-align: center;
+}
+
+.areaButtonsCaptcha{
+    width: 50%;
+}
+
+.buttonsCaptcha{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.captchaButton{
+    background-color:rgb(70, 175, 255);
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 25px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.captchaButton:hover{
+    cursor: pointer;
+}
+
+.captchaButton:focus{
+    outline: none;
+}
+
+.validadoCaptcha{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* CSS registroCompletado.html */
+                    /* Contenido */
+
+.cuadroRegistroCompletado{
+    width: 345px;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background-color: white;
+    padding: 2.5%;
+    text-align: justify;
+}
+
+.tituloRegistroCompletado{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima";
+}
+
+.registroCompletadoButton{
+    background-color: #f7931e;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 35px;
+    border: none;
+    margin-top: 10px;
+}
+
+.registroCompletadoButton:hover{
+    background-color: #c26903;
+    cursor: pointer;
+}
+
+.registroCompletadoLink{
+    text-decoration: none;
+}
+
+.divRegistroCompletadoButton{
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* CSS recuperarContraseña.html */
+
+.textoRecuperar{
+    text-align: justify;
+}
+
+.divRecuperarButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.recuperarButton{
+    background-color: #f7931e;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 35px;
+    border: none;
+}

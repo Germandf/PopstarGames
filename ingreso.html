@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bodyIngreso" id="paginaIngreso">
+    <!-- Navigation -->
+    <div class="navigation">
+        <div class="espacioLogoNav"> 
+            <img class="logoNav" src="images/popstarlogo.png" alt="logo">
+        </div>
+        <div class="seccionesNav">
+            <ul class="itemsNav">
+                <li><a href="juegos.html" class="linkNav">Juegos</a></li>
+                <li><a href="ingreso.html" class="linkNav">Cuenta</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Cuadro para ingresar cuenta -->
+    <div class="cuadroIngreso">
+        <p class="tituloIngreso">Iniciar sesión</p>
+        <form>
+            <div>
+                <input class="inputDecoradoIngreso" type="email" id="emailIngreso" placeholder="Correo electronico">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso"type="password" id="passwordIngreso" placeholder="Contraseña">
+            </div>
+            <div>
+                <input type="checkbox" id="mantenerSesion">Mantener sesión iniciada
+            </div>
+            <p><a href="recuperarPassword.html">¿Has olvidado la contraseña?</a></p>
+            <div class="formBottomIngreso">
+                <p>¿No tiene una cuenta? <a href="registro.html">Cree una</a></p>
+                <div></div>
+                <button class="ingresarButton">Iniciar sesion</button>
+            </div>
+        </form>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerContent">
+            <p class="footerCopyright">© 2020 Popstar Games</p>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="js/js.js"></script>
+</body>
+</html>
