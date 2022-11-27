@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popstar Games</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bodyAdministrador">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark customNavbar">
-        <a class="navbar-brand" href="index.html"><img class="logoNav" src="images/popstarlogo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="juegos.html">Juegos</a>
-            <a class="nav-item nav-link" href="ingreso.html">Cuenta</a>
-            <a class="nav-item nav-link" href="administrador.html">Administrador</a>
-          </div>
-        </div>
-    </nav>
-    <!-- Tabla Dinamica -->
+<article class="bodyAdministrador">
+    <!-- Tabla Dinamica - Proximos lanzamientos -->
     <article class="administradorContent">
         <h1>Próximos lanzamientos</h1>
         <table class="tablaAdministrador">
@@ -38,7 +15,7 @@
             </tbody>
         </table>
     </article>
-    <!-- Formulario -->
+    <!-- Formulario - Proximos lanzamientos -->
     <article class="cuadroFormAdministrador">
         <form id="formAdministrador">
             <div>
@@ -50,7 +27,7 @@
             <div>
                 <input class="inputDecoradoIngreso" id="inputPrecioJuego" type="number" placeholder="Precio">
             </div>
-            <p class="textoError"></p>
+            <p class="textoError" id="textoErrorLanzamientos"></p>
             <div class="divAgregarButton">
                 <button class="agregarButton" id="botonAgregarJuego" type="submit">Agregar</button>
                 <button class="agregarButton" id="botonAgregarTres" type="button">Agregar Auto.</button>
@@ -58,16 +35,74 @@
             </div>
         </form>
     </article>
-    <!-- Footer -->
-    <footer>
-        <div class="footerContent">
-            <p class="footerCopyright">© 2020 Popstar Games</p>
-        </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="js/administrador.js"></script>
-</body>
-</html>
+    <!-- Tabla REST - Ventas del mes -->
+    <article class="administradorContent">
+        <h1>Ventas del mes</h1>
+        <table class="tablaAdministrador">
+            <thead>
+                <tr>
+                    <td>Cliente</td>
+                    <td>Copias</td>
+                    <td>Total</td>
+                    <td class="columnaAcciones">Acciones</td>
+                </tr>
+            </thead>
+            <tbody id="tablaBodyVentas">
+                
+            </tbody>
+        </table>
+    </article>
+    <!-- Cuadro editar - Ventas del mes -->
+    <article class="cuadroFormAdministrador divOculto" id="divEditarVentas">
+        <form>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputNuevoNombreCliente" type="text" placeholder="Nuevo nombre del cliente">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputNuevaCantidadCopias" type="number" placeholder="Nuevo numero de copias">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputNuevoPrecioCopias" type="number" placeholder="Nuevo precio total">
+            </div>
+            <p class="textoError" id="textoErrorEditar"></p>
+            <div class="divAgregarButton">
+                <button class="agregarButton" id="botonCancelar" type="button">Cancelar</button>
+                <button class="agregarButton" id="botonConfirmar" type="button">Confirmar</button>
+            </div>
+        </form>
+    </article>
+    <!-- Filtro de busqueda - Ventas del mes -->
+    <article class="cuadroFormAdministrador">
+        <form>
+            <div>
+                <input class="inputDecoradoIngreso" type="number" id="inputMinimoCopias" placeholder="Minimo de copias">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso" type="number" id="inputMinimoTotal" placeholder="Minimo total">
+            </div>
+            <div class="divAgregarButton">
+                <button class="agregarButton" type="button" id="botonAplicarFiltro">Filtrar</button>
+                <button class="agregarButton" type="button" id="botonQuitarFiltro">Por defecto</button>
+            </div>
+        </form>
+    </article>
+    <!-- Formulario - Ventas del mes -->
+    <article class="cuadroFormAdministrador ultimoCuadro">
+        <form>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputNombreCliente" type="text" placeholder="Nombre del cliente">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputCantidadCopias" type="number" placeholder="Numero de copias">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputPrecioCopias" type="number" placeholder="Precio total">
+            </div>
+            <p class="textoError" id="textoErrorVentas"></p>
+            <div class="divAgregarButton">
+                <button class="agregarButton" id="botonGuardar" type="button">Guardar</button>
+                <button class="agregarButton" id="botonCargarTres" type="button">Cargar Auto.</button>
+            </div>
+        </form>
+    </article>
+</article>

@@ -1,6 +1,8 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function(e){
+export default initRegistro;
+
+function initRegistro(){
     // Declaro variables form
     let nombreRegistro = document.querySelector("#nombreRegistro");
     let apellidoRegistro = document.querySelector("#apellidoRegistro");
@@ -45,11 +47,19 @@ document.addEventListener("DOMContentLoaded", function(e){
     }
     function Registrarse(){
         if(nombreRegistro.value.length!=0 && apellidoRegistro.value.length!=0 && emailRegistro.value.length!=0 && passwordRegistro.value.length!=0 && password2Registro.value.length!=0 && validarCaptcha.innerHTML == "Validado"){
-            document.location.href = "registrocompletado.html";
+            PartialIndex();
         }
         else{
             let textoErrorRegistro = document.querySelector(".textoErrorRegistro");
             textoErrorRegistro.innerHTML = "*Asegurese de llenar todos los datos y resolver el captcha";
         }
     }
-})
+    function PartialIndex(){
+        fetch("indexcontent.html")
+        .then(response => {
+            response.text().then(text =>{
+                pagActualAJAX.innerHTML = text;
+            });
+        })
+    }
+}
