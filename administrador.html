@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bodyRegistroCompletado">
+<body class="bodyAdministrador">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark customNavbar">
         <a class="navbar-brand" href="index.html"><img class="logoNav" src="images/popstarlogo.png"></a>
@@ -22,17 +22,41 @@
           </div>
         </div>
     </nav>
-    <!-- Aviso registro completado -->
-    <article class="cuadroRegistroCompletado">
-        <div>
-            <p class="tituloRegistroCompletado">Registro Completado</p>
-            <p>¡Felicitaciones! Su registro se ha completado correctamente.
-                Le hemos enviado un mail para verificar su direccion de correo electronico.</p>
-            <p>Para continuar, vuelva a la pagina de inicio</p>
-        </div>
-        <div class="divRegistroCompletadoButton">
-            <button class="registroCompletadoButton"><a class="registroCompletadoLink" href="index.html">Ir a inicio</a></button>
-        </div>
+    <!-- Tabla Dinamica -->
+    <article class="administradorContent">
+        <h1>Próximos lanzamientos</h1>
+        <table class="tablaAdministrador">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Fecha</td>
+                    <td>Precio</td>
+                </tr>
+            </thead>
+            <tbody id="tablaBodyAdministrador">
+                
+            </tbody>
+        </table>
+    </article>
+    <!-- Formulario -->
+    <article class="cuadroFormAdministrador">
+        <form id="formAdministrador">
+            <div>
+                <input class="inputDecoradoIngreso" id="inputNombreJuego" type="text" placeholder="Nombre del juego">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputFechaJuego" type="text" placeholder="Fecha de lanzamiento">
+            </div>
+            <div>
+                <input class="inputDecoradoIngreso" id="inputPrecioJuego" type="number" placeholder="Precio">
+            </div>
+            <p class="textoError"></p>
+            <div class="divAgregarButton">
+                <button class="agregarButton" id="botonAgregarJuego" type="submit">Agregar</button>
+                <button class="agregarButton" id="botonAgregarTres" type="button">Agregar Auto.</button>
+                <button class="agregarButton" id="botonVaciarTabla" type="button">Vaciar</button>
+            </div>
+        </form>
     </article>
     <!-- Footer -->
     <footer>
@@ -44,5 +68,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/administrador.js"></script>
 </body>
 </html>

@@ -5,62 +5,25 @@
     src: url("../fonts/customFont.woff2");
 }
 
-.bodyIndex, .bodyJuegos, .bodyIngreso, .bodyRegistro, .bodyRegistroCompletado, .bodyRecuperar{
+.bodyIndex, .bodyJuegos, .bodyAdministrador{
     margin: 0;
     background-image: url(../images/bg-repeatp.png);
 }
 
-/* Navigation */
+.textoError, .textoErrorRegistro{
+    color: red;
+}
 
-.navigation{
+/* Navbar */
+
+.customNavbar{
     background-color: rgb(26, 26, 26);
-    display: flex;
-    height: 50px;
-    width: 100%;
     border-bottom: 2px solid orange;
-}
-
-.espacioLogoNav{
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.logoNav{
-    height: 40px;
-    width: 50px;
-    margin-left: 5px;
-}
-
-.logoNav:hover{
-    cursor: pointer;
-}
-
-.seccionesNav{
-    width: 20%;
-}
-
-.itemsNav{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.linkNav{
-    color: white;
-    text-decoration: none;
-    opacity: 0.4;
-}
-
-.linkNav:hover{
-    color: white;
-    opacity: 1;
 }
 
 /* Footer */
 
-.footer{
+footer{
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -80,108 +43,85 @@
     font-size: 14px;
 }
 
-/* CSS index.html */
-                    /* Parametros generales */
-.pIndex{
-    color: white;
-    font-family: "customFont";
-}
+/* Index.html */
 
-.h1Index{
-    color: white;
-    margin: 0;
-}
-                    /* Contenido */
-.homeContent{
-    width: 1000px;
-    margin: auto;
-    padding: 0 10px;
-    padding-bottom: 50px;
+.logoNav{
+    width: 50px;
+    height: 50px;
 }
 
 .imagenIndex{
     width: 100%;
 }
 
-/* CSS juegos.html */
-                    /* Parametros generales */
-.pJuegos{
+.homeContent p{
     color: white;
     font-family: "customFont";
+    text-align: justify;
 }
 
-li{
+.homeContent h1{
+    color: white;
+    margin: 0;
+}
+
+.homeContent ul li p{
+    text-align: left;
+}
+
+.homeContent li{
     color: white;
 }
-                    /* Contenido */
+
+.homeContent{
+    width: 95%;
+    margin: auto;
+    padding: 0 10px;
+    padding-bottom: 50px;
+}
+
+/* CSS juegos.html */
+
 .tituloCatalogo{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: white;
     font-family: "customFont";
 }
 
 .juegosContent{
-    width: 1000px;
+    width: 95%;
     margin: auto;
-    margin-bottom: 0px;
-    padding: 0 10px;
-    padding-bottom: 50px;
-}
-                    /* Juegos */
-
-.divJuegos{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
 }
 
-.imagenJuegosIzq{
-    height:375px;
-    width:50%;
-    margin-right: 5px;
+.imagenJuegos{
+    width: 100%;
 }
 
-.imagenJuegosDer{
-    height:375px;
-    width:50%;
-    margin-left: 5px;
-}
-
-.tablaJuegosIzq{
+.tablaJuegos{
+    width: 100%;
     color: white;
     border-collapse: collapse;
-    height: 375px;
-    margin: 0 5px 0 0;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.tablaJuegosDer{
-    color: white;
-    border-collapse: collapse;
-    height: 375px;
-    margin: 0 0 0 5px;
-    text-align: center;
-}
-
-thead{
+.bodyJuegos thead{
     background-color: orange;
-    line-height: 40px;
     color: black;
 }
 
-td{
+.bodyJuegos td{
     border: solid 1px white;
+    font-size: 10px;
 }
 
 /* CSS ingreso.html */
                     /* Contenido */
 
 .cuadroIngreso{
-    width: 345px;
+    width: 95%;
     margin: auto;
-    margin-top: 14%;
-    margin-bottom: 14%;
+    margin-top: 2%;
     background-color: white;
     padding: 2.5%;
 }
@@ -199,7 +139,7 @@ td{
     align-items: center;
 }
 
-.ingresarButton{
+.ingresarButton, .registrarButton, .registroCompletadoButton, .agregarButton{
     background-color: #f7931e;
     color: white;
     font-size: 15px;
@@ -208,7 +148,7 @@ td{
     border: none;
 }
 
-.ingresarButton:hover{
+.ingresarButton:hover, .registrarButton:hover, .registroCompletadoButton:hover{
     background-color: #c26903;
     cursor: pointer;
 }
@@ -225,14 +165,16 @@ td{
     outline: none;
 }
 
+.creeCuentaIngreso p, .creeCuentaIngreso a{
+    margin: 0;
+}
+
 /* CSS registro.html */
-                    /* Contenido */
 
 .cuadroRegistro{
-    width: 345px;
+    width: 95%;
     margin: auto;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 2%;
     background-color: white;
     padding: 2.5%;
 }
@@ -300,21 +242,10 @@ td{
 }
 
 .registrarButton{
-    background-color: #f7931e;
-    color: white;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 35px;
-    border: none;
     margin-top: 10px;
 }
 
-.registrarButton:hover{
-    background-color: #c26903;
-    cursor: pointer;
-}
-
-                    /* Captcha */
+/* Captcha */
 
 .captcha{
     margin-top: 10px;
@@ -396,14 +327,16 @@ td{
     margin-top: 10px;
 }
 
+.textoErrorRegistro{
+    margin: 0;
+}
+
 /* CSS registroCompletado.html */
-                    /* Contenido */
 
 .cuadroRegistroCompletado{
-    width: 345px;
+    width: 95%;
     margin: auto;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 2%;
     background-color: white;
     padding: 2.5%;
     text-align: justify;
@@ -416,23 +349,9 @@ td{
     font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima";
 }
 
-.registroCompletadoButton{
-    background-color: #f7931e;
-    color: white;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 35px;
-    border: none;
-    margin-top: 10px;
-}
-
-.registroCompletadoButton:hover{
-    background-color: #c26903;
-    cursor: pointer;
-}
-
 .registroCompletadoLink{
     text-decoration: none;
+    color: white;
 }
 
 .divRegistroCompletadoButton{
@@ -459,4 +378,99 @@ td{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 35px;
     border: none;
+}
+
+/* Administrador.html */
+
+.administradorContent{
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.bodyAdministrador h1{
+    color: white;
+    font-family: "customFont";
+    text-align: center; 
+}
+
+.cuadroFormAdministrador{
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 5px 5px 5px;
+}
+
+.divAgregarButton{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tablaAdministrador{
+    color: white;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+.tablaAdministrador thead{
+    background-color: orange;
+    color: black;
+}
+
+.tablaAdministrador td{
+    border: solid 1px white;
+    font-size: 10px;
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px){
+    .cuadroFormAdministrador{
+        width: 95%;
+    }
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1024px){
+    .bodyIngreso, .bodyRecuperarPassword, .bodyRegistro, .bodyRegistroCompletado{
+        margin: 0;
+        background-image: url(../images/bg-repeatp.png);
+    }
+    .homeContent{
+        width: 1000px;
+    }
+    .juegosContent{
+        width: 1000px;
+        margin-bottom: 0px;
+        padding: 0 10px;
+        padding-bottom: 50px;
+    }
+    .bodyJuegos td{
+        font-size: 18px;
+    }
+    .cuadroIngreso, .cuadroRegistro, .cuadroRegistroCompletado{
+        width: 400px;
+        margin-top: 7%;
+    }
+    .cuadroRegistro{
+        width: 450px;
+        margin-top: 3%;
+    }
+    .administradorContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tablaAdministrador{
+        width: 1000px;
+    }
+    .cuadroFormAdministrador{
+        width: 400px;
+        padding: 30px;
+    }
+    .tablaAdministrador td{
+        font-size: 18px;
+    }
 }

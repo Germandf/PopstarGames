@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popstar Games</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bodyIndex">
-    <!-- Navigation -->
-    <div class="navigation">
-        <div class="espacioLogoNav"> 
-            <img class="logoNav" src="images/popstarlogo.png" alt="logo">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark customNavbar">
+        <a class="navbar-brand" href="index.html"><img class="logoNav" src="images/popstarlogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="juegos.html">Juegos</a>
+            <a class="nav-item nav-link" href="ingreso.html">Cuenta</a>
+            <a class="nav-item nav-link" href="administrador.html">Administrador</a>
+          </div>
         </div>
-        <div class="seccionesNav">
-            <ul class="itemsNav">
-                <li><a href="juegos.html" class="linkNav">Juegos</a></li>
-                <li><a href="ingreso.html" class="linkNav">Cuenta</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Imagen -->
-    <div>
-        <img class="imagenIndex" src="images/indeximage.jpg" alt="imagenIndex">
-    </div>
-    <!-- Area informacion de nosotros -->
-    <div class="homeContent">
-        <h1 class="pIndex">Sobre nosotros</h1>
-        <p class="pIndex">Somos una compañía desarrolladora y publicadora de videojuegos adquirido por el 
+    </nav>
+    <!-- Imagen compañia -->
+    <figure>
+        <img class="imagenIndex" src="images/indeximage.jpg">
+    </figure>
+    <!-- Informacion nosotros -->
+    <article class="homeContent">
+        <h1>Sobre nosotros</h1>
+        <p>Somos una compañía desarrolladora y publicadora de videojuegos adquirido por el 
         publicador de videojuegos "El Sucio Vitor".
         La compañía es internacionalmente conocida por títulos como la serie Auto Car Vehicle o Red Red.</p>
-        <h1 class="pIndex">Historia</h1>
-        <p class="pIndex">La etiqueta Rockstar Games fue fundada en febrero de 2001 por Simón Moyano, Germán De Francesco, El Taaapia y John Doe.</p>
-        <p class="pIndex">La sede principal de Rockstar Games se encuentra en Caseros en el barrio Boca de la ciudad de Tres Arroyos, parte de las oficinas de "El Sucio Vitor". Es el hogar de la comercialización, relaciones públicas y departamentos de desarrollo de productos.</p>
-        <p class="pIndex">A partir de febrero de 2020, los títulos de Rockstar Games han vendido más de 3 copias, siendo la mayor franquicia la serie Auto Car Vehicle que es el único que vendió al menos 2 dólares a partir de noviembre de 2019. Auto Car Vehicle V ha vendido el mayor número de unidades (por lo menos 4 copias) dentro de la serie historia y se convirtió en uno de los videojuegos con menos ventas de todos los tiempos.</p>
-        <h1 class="pIndex">Integrantes</h1>
+        <h1>Historia</h1>
+        <p>La etiqueta Rockstar Games fue fundada en febrero de 2001 por Simón Moyano, Germán De Francesco, El Taaapia y John Doe.</p>
+        <p>La sede principal de Rockstar Games se encuentra en Caseros en el barrio Boca de la ciudad de Tres Arroyos, parte de las oficinas de "El Sucio Vitor". Es el hogar de la comercialización, relaciones públicas y departamentos de desarrollo de productos.</p>
+        <p>A partir de febrero de 2020, los títulos de Rockstar Games han vendido más de 3 copias, siendo la mayor franquicia la serie Auto Car Vehicle que es el único que vendió al menos 2 dólares a partir de noviembre de 2019. Auto Car Vehicle V ha vendido el mayor número de unidades (por lo menos 4 copias) dentro de la serie historia y se convirtió en uno de los videojuegos con menos ventas de todos los tiempos.</p>
+        <h1>Integrantes</h1>
         <ul>
-            <li><p class="pIndex">Simón Moyano (cofundador)</p></li>
-            <li><p class="pIndex">Germán De Francesco (cofundador)</p></li>
-            <li><p class="pIndex">El taaaaapia (diseñador)</p></li>
-            <li><p class="pIndex">Caro (diseñadora)</p></li>
+            <li><p>Simón Moyano (cofundador)</p></li>
+            <li><p>Germán De Francesco (cofundador)</p></li>
+            <li><p>El taaaaapia (diseñador)</p></li>
+            <li><p>Caro (diseñadora)</p></li>
         </ul>
-        
-    </div>
+    </article>
     <!-- Footer -->
-    <div class="footer">
+    <footer>
         <div class="footerContent">
             <p class="footerCopyright">© 2020 Popstar Games</p>
         </div>
-    </div>
-    <!-- Script -->
-    <script src="js/js.js"></script>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

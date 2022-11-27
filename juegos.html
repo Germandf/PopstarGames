@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos</title>
+    <title>Popstar Games</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bodyJuegos">
-    <!-- Navigation -->
-    <div class="navigation">
-        <div class="espacioLogoNav"> 
-            <img class="logoNav" src="images/popstarlogo.png" alt="logo">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark customNavbar">
+        <a class="navbar-brand" href="index.html"><img class="logoNav" src="images/popstarlogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="juegos.html">Juegos</a>
+            <a class="nav-item nav-link" href="ingreso.html">Cuenta</a>
+            <a class="nav-item nav-link" href="administrador.html">Administrador</a>
+          </div>
         </div>
-        <div class="seccionesNav">
-            <ul class="itemsNav">
-                <li><a href="juegos.html" class="linkNav">Juegos</a></li>
-                <li><a href="ingreso.html" class="linkNav">Cuenta</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Area de juegos -->
-    <div class="juegosContent">
+    </nav>
+    <!-- Juegos -->
+    <article class="juegosContent">
         <h1 class="tituloCatalogo">Catálogo de juegos</h1>
-        <div class="divJuegos">
-            <img class="imagenJuegosIzq" src="images/acvclaromeco.jpg" alt="acvClaromeco">
-            <table class="tablaJuegosDer">
+        <section>
+            <img class="imagenJuegos" src="images/acvclaromeco.jpg" alt="acvClaromeco">
+            <table class="tablaJuegos">
                 <thead>
                     <tr>
                         <td>Requisitos</td>
@@ -58,9 +61,10 @@
                     <td>1.55 GB de espacio libre</td>
                 </tr>
             </table>
-        </div>
-        <div class="divJuegos">
-            <table class="tablaJuegosIzq">
+        </section>
+        <section>
+            <img class="imagenJuegos" src="images/acvcarlaandrea.jpg" alt="acvCarlaAndrea">
+            <table class="tablaJuegos">
                 <thead>
                     <tr>
                         <td>Requisitos</td>
@@ -94,11 +98,10 @@
                     <td>4.7GB de free hard disk space</td>
                 </tr>
             </table>
-            <img class="imagenJuegosDer" src="images/acvcarlaandrea.jpg" alt="acvCarlaAndrea">
-        </div>
-        <div class="divJuegos">
-            <img class="imagenJuegosIzq" src="images/redredredemption.jpg" alt="redRedRedEmption">
-            <table class="tablaJuegosDer">
+        </section>
+        <section>
+            <img class="imagenJuegos" src="images/redredredemption.jpg" alt="redRedRedEmption">
+            <table class="tablaJuegos">
                 <thead>
                     <tr>
                         <td>Requisitos</td>
@@ -132,9 +135,10 @@
                     <td>4 GB de espacio disponible</td>
                 </tr>
             </table>
-        </div>
-        <div class="divJuegos">
-            <table class="tablaJuegosIzq">
+        </section>
+        <section>
+            <img class="imagenJuegos" src="images/gully.jpg" alt="gully">
+            <table class="tablaJuegos">
                 <thead>
                     <tr>
                         <td>Requisitos</td>
@@ -168,11 +172,10 @@
                     <td>-</td>
                 </tr>
             </table>
-            <img class="imagenJuegosDer" src="images/gully.jpg" alt="gully">
-        </div>
-        <div class="divJuegos">
-            <img class="imagenJuegosIzq" src="images/acv5.jpg" alt="acv5">
-            <table class="tablaJuegosDer">
+        </section>
+        <section>
+            <img class="imagenJuegos" src="images/acv5.jpg" alt="acv5">
+            <table class="tablaJuegos">
                 <thead>
                     <tr>
                         <td>Requisitos</td>
@@ -206,15 +209,17 @@
                     <td>65GB</td>
                 </tr>
             </table>
-        </div>
-    </div>
+        </section>
+    </article>
     <!-- Footer -->
-    <div class="footer">
+    <footer>
         <div class="footerContent">
             <p class="footerCopyright">© 2020 Popstar Games</p>
         </div>
-    </div>
-    <!-- Script -->
-    <script src="js/js.js"></script>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
